@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --config vite.config.ts",
+    "preview": "vite preview",
+    "lint": "eslint .  --ext .ts"
+  },
+  "devDependencies": {
+    "@types/tmi.js": "^1.8.2",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "eslint": "^8.28.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-standard": "^29.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^3.2.3",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "tmi.js": "^1.8.5"
+  }
+}

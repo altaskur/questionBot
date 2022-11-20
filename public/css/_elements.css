@@ -1,0 +1,23 @@
+p {
+    color: var(--font-color)
+}
+
+#chat-container, #question-container{
+    width: 50%;
+    text-align: center;
+}
+.badges{
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.container .app-item{
+    margin: 2vw 0px;
+    padding: 3vw;
+}
