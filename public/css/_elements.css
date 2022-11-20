@@ -1,10 +1,13 @@
 p {
-    color: var(--font-color)
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
 }
 
 #chat-container, #question-container{
     width: 50%;
     text-align: center;
+    text-overflow: ellipsis;
 }
 .badges{
     display: inline-block;
@@ -14,7 +17,9 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
+    width: 100%;
+    overflow-wrap: break-word;
+    text-overflow:ellipsis;
 }
 
 .container .app-item{
