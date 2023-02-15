@@ -1,0 +1,32 @@
+section#question-container {
+  width: 90vw;
+  height: min-content;
+  border-radius: 15px;
+
+  margin-top: 50px;
+}
+
+section header {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-app-color);
+  border-radius: 12px 12px 0px 0px;
+  padding: calc(var(--border-size) - 8px) calc(var(--border-size) + 12px);
+}
+section article {
+  border-left: var(--border-size) solid var(--background-app-color);
+  border-right: var(--border-size) solid var(--background-app-color);
+  border-bottom: var(--border-size) solid var(--background-app-color);
+  height: 200px;
+  min-height: 150px;
+  max-height: 200px;
+  padding: 24px;
+  overflow: hidden;
+  color: var(--background-app-color);
+}
+
+.app-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 150px;
+}
