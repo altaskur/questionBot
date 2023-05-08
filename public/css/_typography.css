@@ -7,12 +7,16 @@
 }
 
 :root {
-  font-size: 3vw;
   font-family: VT323, sans-serif;
   color: var(--font-color);
-  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.304);
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.132);
 }
 
-.nickName {
-  font-weight: 700;
+header {
+  font-size: calc(var(--font-size) * 0.52);
+}
+
+p {
+  font-size: 58px;
+  font-weight: 600;
 }

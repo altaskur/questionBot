@@ -1,5 +1,5 @@
 import tmi from 'tmi.js'
-import { showMessage } from './functions'
+import { showMessage } from './questionBot/functions'
 
 export const channelName = ['altaskur']
 
@@ -10,9 +10,10 @@ client.on('connected', () => {
   console.log(`Conectado a ${channelName[0]}`)
 })
 client.on('message', (channel, tags, message) => {
+  const displayName: string = tags.username ?? ''
+
   if (message.startsWith('!pregunta')) {
     message = message.replace('!pregunta', '').trim()
-    tags['display-name'] = tags['display-name'] === undefined ? 'undefined' : tags['display-name']
-    showMessage(true, channel, tags['display-name'], message)
+    showMessage(channel, displayName, message)
   }
 })

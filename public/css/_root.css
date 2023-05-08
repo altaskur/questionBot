@@ -1,0 +1,10 @@
+:root {
+  font-family: VT323, sans-serif;
+  color: var(--secondary-color);
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}

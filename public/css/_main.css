@@ -1,5 +1,41 @@
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+main {
+  width: calc(1200px - var(--border-radius));
+  height: calc(400px - var(--border-radius));
+  background-color: var(--principal-color);
+  border-radius: var(--border-radius);
+  padding: calc(var(--border-radius) + 8px);
+  padding-top: calc(var(--border-radius) - 15px);
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2.5fr;
+}
+
+header {
+  color: var(--secondary-color);
+  padding-top: 4px;
+  padding-bottom: 3px;
+}
+
+article {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 12px;
+  color: var(--principal-color);
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow: hidden;
+}
+
+p {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #5c5c5c;
+}
+P::first-letter {
+  text-transform: uppercase;
 }
