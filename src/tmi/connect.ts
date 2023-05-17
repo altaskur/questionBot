@@ -6,6 +6,13 @@ export const channelName = ['altaskur']
 export const client = new tmi.Client({
   channels: channelName
 })
+let counter = 0;
+
+export function addCounter() {
+  counter++;
+  return counter
+}
+
 client.on('connected', () => {
   console.log(`Conectado a ${channelName[0]}`)
 })

@@ -1,3 +1,4 @@
+import { addCounter } from "../connect"
 
 export function showMessage (channel: string, author: string, message: string): void {
   const messageFormatted = formatMessage(author, message)
@@ -17,10 +18,11 @@ function clickForRemove (event: any): void {
 }
 
 function formatMessage (author: string, message: string): string {
-  return `${author}: ${message}`
+  return `[${addCounter()}] ${author}: ${message}`
 }
 
 function addMessage (message: string): void {
+  console.log(message)
   const chatDiv = document.querySelector<HTMLDivElement>('article')!
 
   const messageDiv = document.createElement("p")
