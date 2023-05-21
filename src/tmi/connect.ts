@@ -18,7 +18,7 @@ client.on('connected', () => {
 })
 client.on('message', (channel, tags, message) => {
   const displayName: string = tags.username ?? ''
-
+  message = message.toLocaleLowerCase();
   if (message.startsWith('!pregunta')) {
     message = message.replace('!pregunta', '').trim()
     showMessage(channel, displayName, message)

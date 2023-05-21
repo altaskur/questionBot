@@ -22,14 +22,17 @@ article {
   border-radius: 5px;
   padding: 12px;
   color: var(--principal-color);
-  height: auto;
+  height: calc(100% - 30px);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  gap:0;
 }
 
 p {
+  height: 70px;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
